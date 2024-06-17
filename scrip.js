@@ -1,23 +1,4 @@
-// function nott2() {
-//     document.querySelector('img').style.backgroundImage = 'url("1316024.png")';
-// }
 
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     function nott2() {
-//         var imgElement = document.querySelector('img');
-//         if (imgElement) {
-//             imgElement.style.backgroundImage = 'url("1316024.png")';
-//         } else {
-//             console.log('No se encontró el elemento img');
-//         }
-//     }
-
-//     // Puedes llamar a nott2 aquí o en respuesta a algún evento
-//     nott2();
-// });
 
 function nott1(){
     document.getElementById('img').style.backgroundImage = 'url(1317021.png)'
@@ -29,15 +10,27 @@ function nott2(){
 }
 function nott3(){
     document.getElementById('img').style.backgroundImage = 'url(1358387.jpeg)'
-    document.getElementById('content').innerHTML = '<h3>Marvel Rivals lanzamiento</h3> <p>Se rumorea que Marvel rivals podria ser lanzado globalmente en enero del 2025</p>'
+    document.getElementById('content').innerHTML = '<h3>Marvel Rivals</h3> <p>Nuevo juego de marvel aun en beta cerrada</p>'
+
+}
+function nott4(){
+    document.getElementById('img').style.backgroundImage = 'url(destiny.webp)'
+    document.getElementById('content').innerHTML = '<h3>Destiny 2 The Final Shape</h3> <p> La última expansión de "Destiny 2" lleva a los jugadores al corazón del Viajero para concluir la Guerra de la Luz y la Oscuridad</p>'
+
+}
+function nott5(){
+    document.getElementById('img').style.backgroundImage = 'url(EldenRing.webp)'
+    document.getElementById('content').innerHTML = '<h3>Shadow of the Erdtree</h3> <p> Esta muy anticipada expansión para "Elden Ring" se lanzará el 21 de junio</p>'
 
 }
 function button(){
     document.getElementById('navBar2').style.width = '100%'
+    document.body.style.overflow = 'hidden'
 
 }
 function clouseButton(){
     document.getElementById('navBar2').style.width = '0'
+        document.body.style.overflow = 'scroll'
 
 }
 function cambiarPagina() {
@@ -53,7 +46,7 @@ function nintendo(){
         x  --
     }
     else if (x === 0){
-        document.getElementById('nintendo').getElementsByTagName('img')[0].style.width = '100%'
+        document.getElementById('nintendo').getElementsByTagName('img')[0].style.width = '50%'
         document.getElementById('nintendoImg').style.width = '0'
         document.getElementById('nintendo').getElementsByTagName('img')[0].style.height = '100%'
         x ++
@@ -72,7 +65,7 @@ function playStation(){
         y  --
     }
     else if (y === 0){
-        document.getElementById('playStation').getElementsByTagName('img')[0].style.width = '100%'
+        document.getElementById('playStation').getElementsByTagName('img')[0].style.width = '50%'
         document.getElementById('playStationImg').style.width = '0'
         document.getElementById('playStation').getElementsByTagName('img')[0].style.height = '100%'
         y ++
@@ -90,7 +83,7 @@ function xbox(){
         z --
     }
     else if (z === 0){
-        document.getElementById('xbox').getElementsByTagName('img')[0].style.width = '100%'
+        document.getElementById('xbox').getElementsByTagName('img')[0].style.width = '50%'
         document.getElementById('xboxImg').style.width = '0'
         document.getElementById('xbox').getElementsByTagName('img')[0].style.height = '100%'
         z ++
