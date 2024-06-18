@@ -1,10 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Ubuntu", sans-serif;
+
 }
 a{
     text-decoration: none;
     color: inherit;
+}
+@font-face {
+    font-family: 'Minecraft';
+    src: url('minecraftia-regular-webfont.woff2') format('woff2'),
+         url('minecraftia-regular-webfont.woff') format('woff'),
+         url('Minecraftia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 body{
     background-color: rgb(37, 37, 37);
@@ -251,7 +261,7 @@ body{
     background-color: rgb(37, 37, 37);
     margin-bottom: 20px;
     text-align: left;
-    font-family: minecraft;
+    font-family: Minecraft;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,7 +275,7 @@ body{
     background-color: transparent;
     height: 100vh;
     width: 0;
-    z-index: 2;
+    z-index: 10000;
     color: white;
     justify-content: center;
     align-items: center;
@@ -364,14 +374,7 @@ footer li{
     }
 
 }
-@font-face {
-    font-family: 'Minecraft';
-    src: url('minecraftia-regular-webfont.woff2') format('woff2'),
-         url('minecraftia-regular-webfont.woff') format('woff'),
-         url('Minecraftia-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .newHeader{
     height: 10%;
     width: 100%;
@@ -613,7 +616,13 @@ footer li{
 
 
 
+.nintendo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 
+}
 
 .guiasSeccion{
     height: 60%;
@@ -629,6 +638,8 @@ footer li{
         justify-content: center;
         align-items: center;
         background-color: #DE0000;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+
         .nintendoImg{
             width: 0;
             height: 500px;
@@ -637,6 +648,7 @@ footer li{
             transition: 1s;
             -ms-overflow-style: none;
             scrollbar-width: none;
+        
             .nintendoImg1{
                 background-image: url(elrostrodelinkdeTheLegendofZeldaBreathof.jpg);
                 height: 125px;
@@ -756,7 +768,12 @@ footer li{
 
     }
 
-
+.playStation:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
 
     .playStation{
         width: 100%;
@@ -767,6 +784,8 @@ footer li{
         align-items: center;
         background-color: white;
         border-radius: 5px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+
         .playStationImg{
             width: 0;
             height: 500px;
@@ -918,7 +937,12 @@ footer li{
         }
 
     }
-
+.xbox:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
     .xbox{
         width: 100%;
         height: 500px;
@@ -928,6 +952,8 @@ footer li{
         align-items: center;
         background-color:   #00A637;
         border-radius: 5px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+
         .xboxImg{
             width: 0;
             height: 500px;
@@ -1174,8 +1200,8 @@ footer li{
 }
 .guia-halo{
     width: 100%;
-    height: 900px;
-    background-image: url(zelda.jpg);
+    height: 1500px;
+    background-image: url(master.webp);
     background-size: cover;
     background-position: 100%;
     display: flex;
@@ -1190,7 +1216,7 @@ footer li{
     width: 50%;
     div{
         width: 80%;
-        height: 1600px;
+        height: 1200px;
         margin-top: 10%;
         background-color: white;
         border-radius: 5px;
@@ -1200,8 +1226,8 @@ footer li{
 }
 .guia-ofwar{
     width: 100%;
-    height: 900px;
-    background-image: url(zelda.jpg);
+    height: 1500px;
+    background-image: url(kratos.webp);
     background-size: cover;
     background-position: 100%;
     display: flex;
@@ -1218,7 +1244,7 @@ footer li{
     width: 50%;
     div{
         width: 80%;
-        height: 1600px;
+        height: 1200px;
         margin-top: 10%;
         background-color: white;
         border-radius: 5px;
@@ -1270,6 +1296,24 @@ footer li{
             width: 90%;
         }
     }
+    .contenedor-ofwar{
+        width: 80%;
+        div{
+            width: 90%;
+        }
+    }
+    .contenedor-zelda{
+        width: 80%;
+        div{
+            width: 90%;
+        }
+    }
+    .contenedor-halo{
+        width: 80%;
+        div{
+            width: 90%;
+        }
+    }
     .backContainer2{
         width: 80%;
         div{
@@ -1303,3 +1347,195 @@ footer li{
         padding: 5%;
         text-align: center;
     }
+
+
+
+
+
+/* Lineas de Tiempo STYLE */
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; 
+}
+
+.logo-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #08031a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+.logos {
+    width: 150px;
+    margin: 5px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding: 20px 0;
+    border: 1px solid #ccc;
+    background-color: #222;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #222;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #222;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.lineas-container {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.timeline-item {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #333;
+    padding: 10px;
+    position: relative;
+    min-width: 200px; 
+}
+
+.timeline-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.year {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ffc107;
+}
+
+.name {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.img-container {
+    background-color: #107f5e;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.img-container-game{
+    background-color: #545454;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.img-container-game img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.flecha {
+    width: 50px;
+    height: auto;
+    margin: 0 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flecha:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .img-container {
+        width: 180px;
+        height: 180px;
+    }
+
+    .timeline-item {
+        min-width: 180px;
+    }
+
+    .flecha {
+        width: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .timeline-item {
+        min-width: 150px;
+    }
+
+    .flecha {
+        width: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .timeline-item {
+        min-width: 120px;
+    }
+
+    .flecha {
+        width: 20px;
+    }
+
+    .content {
+        width: 95%;
+    }
+}

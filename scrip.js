@@ -15,7 +15,7 @@ function nott3(){
 }
 function nott4(){
     document.getElementById('img').style.backgroundImage = 'url(destiny.webp)'
-    document.getElementById('content').innerHTML = '<h3>Destiny 2 The Final Shape</h3> <p> La última expansión de "Destiny 2" lleva a los jugadores al corazón del Viajero para concluir la Guerra de la Luz y la Oscuridad</p>'
+    document.getElementById('content').innerHTML = '<h3>Destiny 2 The Final Shape</h3> <p> lleva a los jugadores al corazón del Viajero para concluir la Guerra de la Luz y la Oscuridad</p>'
 
 }
 function nott5(){
